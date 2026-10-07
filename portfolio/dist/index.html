@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarinha Atelier — Olhar com afeto</title>
+  <meta name="description" content="Um lugar para imagens, filmes e histórias contadas com afeto. Portfólio de uma artista audiovisual.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ac4934'/%3E%3Cpath d='M16 24C2 16 9 6 16 12C23 6 30 16 16 24' fill='%23fff3df'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="#inicio" aria-label="Sarinha Atelier, início">Sarinha Atelier<span class="brand-star" aria-hidden="true">✳</span></a>
+    <nav aria-label="Navegação principal"><a href="#trabalhos">Trabalhos</a><a href="#sobre">Sobre mim</a><a class="nav-note" href="#caderno">Meu caderno <span aria-hidden="true">♡</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="hero-copy"><p class="eyebrow"><span class="tiny-line"></span> ARTISTA AUDIOVISUAL</p><h1>Um olhar sensível.<br>Mil histórias<br><em>para contar.</em></h1><p class="intro">Fotografia, filmes e pequenos instantes.<br>Um cantinho para guardar o que crio<br>e tudo aquilo que me atravessa.</p><a class="button" href="#trabalhos">Explore meus trabalhos <span aria-hidden="true">✳</span></a><p class="handwriting hero-note">feito com tempo, luz e carinho</p></div>
+      <div class="hero-album"><div class="album-tag">UM POUCO DO MEU MUNDO</div><div class="photo hero-photo"><div class="blank" aria-label="Espaço reservado para uma foto de destaque"><span class="placeholder-mark">+</span><span>sua fotografia aqui</span></div><div class="photo-caption"><span>o bonito mora nos detalhes</span><span>01 / ∞</span></div></div><div class="small-photo photo"><div class="blank" aria-label="Espaço reservado para uma segunda foto"><span class="placeholder-mark">+</span></div><p>memórias que ficam ♡</p></div><span class="album-star" aria-hidden="true">✳</span><span class="handwriting album-note">colecionando<br>pequenas belezas</span></div>
+    </section>
+    <div class="ribbon" aria-hidden="true"><span>IMAGENS QUE ABRAÇAM</span><b>✳</b><span>HISTÓRIAS QUE CONECTAM</span><b>✳</b><span>CRIAR É SENTIR</span><b>✳</b><span>IMAGENS QUE ABRAÇAM</span></div>
+    <section class="works wrap section" id="trabalhos"><div class="section-heading"><div><p class="eyebrow">MEU UNIVERSO CRIATIVO</p><h2>Histórias em <em>imagens.</em></h2></div><p>Recortes do mundo, do meu jeito.<br>Cada projeto, um pedacinho de mim.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar trabalhos"><button class="active" data-filter="todos" aria-pressed("true">Todos os trabalhos <span>06</span></button><button data-filter("fotografia" aria-pressed("false">Fotografia</button><button data-filter("filmes" aria-pressed("false">Filmes</button><button data-filter("edicao" aria-pressed("false">Edição</button></div>
+      <div class="gallery" id="gallery"></div><p id="result-status" class="sr-only" role="status"></p>
+      <p class="gallery-foot"><span aria-hidden="true">♡</span> Este acervo está só começando. Tem muita história bonita por vir.</p>
+    </section>
+    <section class="about" id="sobre"><div class="wrap about-grid"><div class="portrait photo"><div class="blank" aria-label="Espaço reservado para um retrato da artista"><span class="placeholder-mark">+</span><span>seu retrato aqui</span></div><p>prazer, essa sou eu ♡</p></div><div class="about-copy"><p class="eyebrow">POR TRÁS DAS IMAGENS</p><h2>Oi, eu sou <em>seu nome.</em></h2><p>Gosto de gente, de encontros e de reparar nas coisas que quase passam despercebidas. É daí que nasce minha vontade de criar.</p><p>Entre uma gravação, um clique e uma edição, procuro transformar momentos em histórias que a gente sente. Meu trabalho tem um pouco de quem sou e muito das pessoas que caminham comigo.</p><div class="skills"><span>Fotografia</span><span>Direção & gravação</span><span>Edição de vídeo</span></div><p class="handwriting">criar fica mais bonito quando é junto.</p></div></div></section>
+    <section class="notebook wrap section" id="caderno"><div class="section-heading"><div><p class="eyebrow">ENTRE UM PROJETO E OUTRO</p><h2>Meu caderno de <em>instantes.</em></h2></div><p>Bastidores, encontros e inspirações.<br>A vida também faz parte do processo.</p></div><div class="notes"><div class="note-photo photo"><div class="blank"><span class="placeholder-mark">+</span><span>um bastidor</span></div><p>o que acontece fora do quadro</p></div><div class="paper-note"><span class="eyebrow">NOTA PRA MIM</span><p>Guardar o instante.<br>Abraçar o processo.<br>Criar com o coração.</p><span class="note-heart" aria-hidden="true">♡</span><span class="handwriting">e nunca perder a curiosidade</span></div><div class="note-photo photo"><div class="blank"><span class="placeholder-mark">+</span><span>um encontro</span></div><p>as pessoas que inspiram meu olhar</p></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-top"><a class="brand" href="#inicio">seu nome<span aria-hidden="true">✳</span></a><p>Imagens, encontros e afeto.</p><a href="#trabalhos">Voltar aos trabalhos</a></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Seu nome · Artista audiovisual</span><span>Feito com carinho <span aria-hidden="true">♡</span></span></div></footer>
+  <dialog id="project-dialog"><button class="close-dialog" aria-label="Fechar projeto">×</button><div class="dialog-blank blank"><span class="placeholder-mark">+</span><span id="dialog-media-label"></span></div><div class="dialog-content"><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><p class="coming-soon">Espaço reservado — o trabalho será adicionado em breve.</p></div></dialog>
+</body></html>
